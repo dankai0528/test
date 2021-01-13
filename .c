@@ -42,7 +42,7 @@ static ssize_t led_write(struct file* filp,const char* buf, size_t count, loff_t
         	msleep(300);
 		gpio_base[7] = 1 << 25;
 		msleep(300);
-		gpio_base[10] = 1 << 25;  
+		gpio_base[1] = 1 << 25;・
         	
 		msleep(1800);
 
