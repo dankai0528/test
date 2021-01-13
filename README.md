@@ -22,6 +22,12 @@ $ sudo insmod kadai.ko
 $ sudo chmod 666 /dev/myled0
 ```
 
+# 使用方法
+```bash
+$ echo 1 > /dev/myled0
+```
+これにより、光らせることができる。
+
 # デモ動画
 https://www.youtube.com/watch?v=WBCPGcDngKQ&feature=youtu.be
 
