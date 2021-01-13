@@ -4,6 +4,7 @@
 #include <linux/device.h>
 #include <linux/uaccess.h>
 #include <linux/io.h>
+#include <linux/delay.h>
 
 MODULE_AUTHOR("Dan Kai");
 MODULE_DESCRIPTION("driver for LED control");
@@ -26,9 +27,65 @@ static ssize_t led_write(struct file* filp,const char* buf, size_t count, loff_t
         if(c == '0')
                 gpio_base[10] = 1 << 25;
         
-        else if(c == '1')
-               gpio_base[7] = 1 << 25;
-        
+        else if(c == '1'){
+		gpio_base[7] = 1 << 25;
+		msleep(300);
+		gpio_base[10] = 1 << 25;
+        	msleep(300);
+		gpio_base[7] = 1 << 25;
+		msleep(1200);
+		gpio_base[10] = 1 << 25;
+        	msleep(300);
+		gpio_base[7] = 1 << 25;
+		msleep(300);
+		gpio_base[10] = 1 << 25;
+        	msleep(300);
+		gpio_base[7] = 1 << 25;
+		msleep(300);
+		gpio_base[10] = 1 << 25;  
+        	
+		msleep(1800);
+
+		gpio_base[7] = 1 << 25;
+		msleep(300);
+		gpio_base[10] = 1 << 25;
+        	msleep(300);
+		gpio_base[7] = 1 << 25;
+		msleep(1200);
+		gpio_base[10] = 1 << 25;
+
+        	msleep(1800);
+
+		gpio_base[7] = 1 << 25;
+		msleep(1200);
+		gpio_base[10] = 1 << 25;
+        	msleep(300);
+		gpio_base[7] = 1 << 25;
+		msleep(300);
+		gpio_base[10] = 1 << 25;
+
+        	msleep(1800);
+
+		gpio_base[7] = 1 << 25;
+		msleep(300);
+		gpio_base[10] = 1 << 25;
+        	msleep(300);
+		gpio_base[7] = 1 << 25;
+		msleep(1200);
+		gpio_base[10] = 1 << 25;
+        	msleep(300);
+		gpio_base[7] = 1 << 25;
+		msleep(300);
+		gpio_base[10] = 1 << 25;
+        	msleep(300);
+		gpio_base[7] = 1 << 25;
+		msleep(1200);
+		gpio_base[10] = 1 << 25;
+        	msleep(300);
+		gpio_base[7] = 1 << 25;
+		msleep(300);
+		gpio_base[10] = 1 << 25;
+        	}
 
         return 1;
 
