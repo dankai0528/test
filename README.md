@@ -13,4 +13,4 @@ LEDを点滅させることにより、モールス信号を表す。
 https://www.youtube.com/watch?v=WBCPGcDngKQ&feature=youtu.be
 
 ##### ライセンス
-GNU General Public License v3.0
+
