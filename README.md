@@ -9,8 +9,14 @@ LEDを点滅させることにより、モールス信号を表す。
 ・ラズベリーパイ３B＋
 ・Ubuntu18.04
 
-#### デモ動画
+#### インストール方法
+$ git clone https://github.com/k-Ryunosuke/robot-system.git
+$ make
+$ sudo insmod myled.ko
+$ sudo chmod 666 /dev/myled0
+
+##### デモ動画
 https://www.youtube.com/watch?v=WBCPGcDngKQ&feature=youtu.be
 
-##### ライセンス
+###### ライセンス
 GNU General Public License v3.0
