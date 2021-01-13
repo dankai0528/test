@@ -16,6 +16,7 @@ LEDを点滅させることにより、モールス信号を表す。
 # インストール方法
 ```bash
 $ git clone https://github.com/dankai0528/test.git
+$ cd test
 $ make
 $ sudo insmod kadai.ko
 $ sudo chmod 666 /dev/myled0
