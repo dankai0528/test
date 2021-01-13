@@ -13,4 +13,4 @@ LEDを点滅させることにより、モールス信号を表す。
 https://www.youtube.com/watch?v=WBCPGcDngKQ&feature=youtu.be
 
 ##### ライセンス
-https://github.com/k-Ryunosuke/robot-system/blob/main/COPYING
+GNU General Public License v3.0
